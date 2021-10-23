@@ -45,4 +45,5 @@ use the following html code for the next question
 * When clicking the `test timeout` button the following sentence should show up `The timeout has been started`
 * After 3 seconds the follwing sentence should show up with green color `The timeout has been triggered!`
 * When clicking the `clear timeout` button the timeout should be cleared and the following sentence should show up `The timeout has been cleared` 
+
 <i>Hint use clearTimeout()</i>

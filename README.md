@@ -33,8 +33,8 @@ use the following html code for the next question
 <h1>Press the buttons below to see how setTimeout is used. Wait to see how the text below changes after a timeout of 3 seconds.</h1>
 
   <div>
-      <input type="button" value="test timeout" onclick="timeout_init()" />
-      <input type="button" value="clear timeout" onclick="timeout_clear()" />
+      <input type="button" value="test timeout"  />
+      <input type="button" value="clear timeout"  />
   </div>
   <br>
   <h3 id="timeout_text"></h3>

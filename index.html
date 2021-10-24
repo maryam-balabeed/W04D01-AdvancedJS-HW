@@ -1,0 +1,36 @@
+<html>
+<body>
+<h1>Press the buttons below to see how setTimeout is used. Wait to see how the text below changes after a timeout of 3 seconds.</h1>
+
+  <div>
+      <input onclick="start()" type="button" value="test timeout"  />
+      <input onclick="v()"type="button" value="clear timeout"  />
+  </div>
+  <br>
+  <h3 id="timeout_text"></h3>
+
+
+  <script>
+let timeout = document.getElementById('timeout_text')
+
+ function start(){
+
+     timeout.innerHTML = 'started'
+     mytime()
+ }
+ const mytime = setTimeout(function() {
+    timeout.innerHTML = 'trigger'
+    timeout.style.backgroundColor = 'green'
+ },3000)
+
+
+
+function v(){
+    document.getElementById('timeout_text').innerHTML = 'clear';
+    timeout.style.backgroundColor = 'transparent'
+    clearTimeout(mytime);
+}
+
+  </script>
+</body>
+</html>

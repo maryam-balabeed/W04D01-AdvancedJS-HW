@@ -1,3 +1,19 @@
+let timeout;
+function triggering(elmnt) {
+  if (elmnt.value != "The timeout has been triggered!") {
+    elmnt.value = "The timeout has been started";
+    timeout = setTimeout(() => {
+      elmnt.value = "The timeout has been triggered!";
+      elmnt.style = "color:green;";
+    }, 3000);
+  }
+}
+
+function clearing(elmnt) {
+  clearTimeout(timeout);
+  document.getElementById("trigger").value = "The timeout has been cleared";
+  document.getElementById("trigger").style = "color:initial;";
+}
 // Step 1: Rewriting the code above without using any arrow functions.
 fetch("https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699")
     .then(function(res){

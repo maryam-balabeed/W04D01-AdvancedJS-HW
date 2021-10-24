@@ -22,16 +22,16 @@ fetchbooks();
 let started = document.getElementById("timeout_text");
 let timeout;
 
-const testTimeout = () => {
+function testTimeout  () =  {
   started.innerHTML = "The timeout has been started";
   started.style.color = "black";
   timeout = setTimeout(timeTrigger, 3000);
 };
-const timeTrigger = () => {
+function timeTrigger  () = {
   started.innerHTML = "The timeout has been triggred!";
   started.style.color = "green";
 };
-const clearTime = () => {
+function clearTime  () = {
   started.innerHTML = "The timeout has been cleared";
   started.style.color = "black";
   clearTimeout(timeout);

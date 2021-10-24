@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
-    <script src="Advanced.js"></script>
-</body>
+
+  <body>
+    <h1>
+      Press the buttons below to see how setTimeout is used. Wait to see how the
+      text below changes after a timeout of 3 seconds.
+    </h1>
+
+    <div>
+      <input type="button" value="test timeout" onclick="testTimeout()" />
+      <input type="button" value="clear timeout" onclick="clearTime()" />
+    </div>
+    <br />
+    <hr />
+    <h3 id="timeout_text"></h3>
+     <script src="Advanced.js"></script>
+    <script src="index.js"></script>
+  </body>
+
 </html>

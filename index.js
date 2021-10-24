@@ -7,7 +7,7 @@ async function fetchbooks() {
       "https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699"
     );
     let data = await res.json();
-    console.log("Title: ",       data.items[0].volumeInfo.title);
+    console.log("Title: ", data.items[0].volumeInfo.title);
     console.log("Description: ", data.items[0].volumeInfo.description);
   } catch (err) {
     console.log(err);
@@ -22,18 +22,17 @@ fetchbooks();
 let started = document.getElementById("timeout_text");
 let timeout;
 
-function testTimeout() {
+const testTimeout = () => {
   started.innerHTML = "The timeout has been started";
   started.style.color = "black";
   timeout = setTimeout(timeTrigger, 3000);
-}
-function timeTrigger() {
- started.innerHTML = "The timeout has been triggred!";
- started.style.color = "green";
-
-}
-function clearTime() {
-    started.innerHTML = "The timeout has been cleared";
-    started.style.color = "black";
+};
+const timeTrigger = () => {
+  started.innerHTML = "The timeout has been triggred!";
+  started.style.color = "green";
+};
+const clearTime = () => {
+  started.innerHTML = "The timeout has been cleared";
+  started.style.color = "black";
   clearTimeout(timeout);
-}
+};
